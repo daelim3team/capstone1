@@ -16,57 +16,32 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Mypage extends AppCompatActivity {
-   TextView tvDate;
-    LinearLayout container;
+
     Button bt_repair_registration;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         bt_repair_registration = findViewById(R.id.button2);
 
-        setContentView(R.layout.activity_mypage);
+        dynamic_mypage_view n_test = new dynamic_mypage_view(getApplicationContext());    //Test에 있는 자바와 XML 객체로 가져오기
+        LinearLayout con = (LinearLayout) findViewById(R.id.scrollview_Linear1); //추가할 레이아웃 위치
+        con.addView(n_test);    //add View로 추가 명령
 
-        container = (LinearLayout) findViewById(R.id.linear_1);
-        // 디자인 변수 초기화
-        tvDate = (TextView) findViewById(R.id.tv_Date);
-        // Text에 시간 세팅
-        tvDate.setText(getTime());
 
-        bt_repair_registration.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(Mypage.this,Repair_Register.class);
-                        startActivity(intent);
-                    }
-                }
-        );
+
+//        bt_repair_registration.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        Intent intent = new Intent(Mypage.this,Repair_Register.class);
+//                        startActivity(intent);
+//                    }
+//                }
+//        );
 
     }
 
-    private String getTime() {
-        long now = System.currentTimeMillis();
-        Date date = new Date(now);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        String getTime = dateFormat.format(date);
-        return getTime;
-    }
 
-
-    private void createTextView(){ //TextView 자동 생성 부분
-
-        TextView textView = new TextView(getApplicationContext());
-
-        textView.setText("Test");
-        textView.setTextSize(12);
-        textView.setTypeface(null, Typeface.BOLD);
-        textView.setId(0);
-
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-
-        lp.gravity = Gravity.CENTER;
-        textView.setLayoutParams(lp);
-        container.addView(textView);
-    }
 
 }

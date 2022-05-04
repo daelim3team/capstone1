@@ -2,21 +2,13 @@ package com.example.capstoneproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.HorizontalScrollView;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
     Button registration;
@@ -30,6 +22,8 @@ public class Home extends AppCompatActivity {
         registration = findViewById(R.id.button3);
         imgv_mypage = findViewById(R.id.imageView5);
 
+
+
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,18 +31,14 @@ public class Home extends AppCompatActivity {
                 //하위 코드 실행을 위한 입시 주석
                 //startActivity(intent);
 
-                //임시 코드 시작
-                HorizontalScrollView horizontalScrollView = (HorizontalScrollView) findViewById(R.id.con);
-                LayoutInflater vi	= (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                //임시 동적 뷰
+                for (int i = 0; i <= 3; i++) { //테스트용 반복문 (없어도 됨)
+                    dynamic_Home_view n_dynamicHomeview = new dynamic_Home_view(getApplicationContext());    //Test에 있는 자바와 XML 객체로 가져오기
+                    LinearLayout con = (LinearLayout) findViewById(R.id.scrollview_Linear); //추가할 레이아웃 위치
+                    con.addView(n_dynamicHomeview);    //add View로 추가 명령
+                }
 
-                View vi_view= vi.inflate(R.layout.activity_test, null,false);
-
-//                RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-//
-//                vi_view.setLayoutParams(p);
-                horizontalScrollView.addView(vi_view);//error
-                //setContentView(vi_view); 뷰 이동
-                //임시 코드 끝
+                //임시 동적 뷰 코드 끝
             }
         });
 
@@ -56,10 +46,11 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home.this,Mypage.class);
-
+                Toast.makeText(Home.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });
+
 
     }
 }

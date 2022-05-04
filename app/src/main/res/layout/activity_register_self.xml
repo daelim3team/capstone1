@@ -61,8 +61,8 @@
             android:layout_height="match_parent"
             android:layout_weight="0"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="입력해주세요"
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 
@@ -114,8 +114,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="입력해주세요"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout

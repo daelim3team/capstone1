@@ -10,12 +10,12 @@ xml 코드 연결 : Intent 연결 			95%완료
 	Register_self			0% 완료
 
 동적 뷰 제작
-	Home				0% 완료
-	Mypage				70% 완료
+	Home				100% 완료 (테스트 완료, 값 가져오기는 아직)
+	Mypage				0% 완료
 
 파일에서 가져온 데이터 적용
 	Mypage :				0% 완료
-	Home    :				0% 완료
+	Home    :			0% 완료
 
 API를 사용해서 검색 부분 구현
 	activity_register_search2 : 		0% 완료
@@ -38,3 +38,7 @@ API를 사용해서 검색 부분 구현
 activity_register_search2에서 보이는 화면은 검색된 제품의 이미지만 보인다.
 휴대폰 화면의 넓이를 계산해서 자동으로 크기와 비율을 정하도록 한다.
 repair_register에서 메모부분을 스크롤이 가능하도록 만든다.
+
+==================================================
+에러 사항
+image_View5 클릭시 Activity_mypage.xml이 원활이 표시가 안됨
