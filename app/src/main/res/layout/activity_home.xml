@@ -14,58 +14,50 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="350dp"
+            android:layout_width="354dp"
             android:layout_height="match_parent"
-            android:background="#FFFFFFF"
+            android:background="#FBCDDC"
             android:gravity="left|fill_vertical"
             android:letterSpacing="0.2"
             android:paddingLeft="20dp"
             android:text="A/S 관리"
-            android:textSize="22sp" />
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="46dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#FFFFFF"
-            app:srcCompat="@drawable/__user__1_" />
-
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBCDDC"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
     </LinearLayout>
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="35dp"
-        android:background="#F3F3F3"
-        android:orientation="horizontal">
+        android:layout_height="199dp"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView3"
-
+        <TextView
+            android:id="@+id/textView8"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_height="6dp"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/____" />/>
+            android:gravity="center_vertical"
+            android:text="가전 및 전자제품을 등록해주세요!"
+            android:textSize="25sp" />
 
-        <android.widget.Button
+        <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="2"
-            android:background="@drawable/button_round"
-            android:backgroundTint="@color/white"
+            android:layout_width="141dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginBottom="35dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="등록하기"
-            android:textColor="#000000"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -80,17 +72,15 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="   사용 중인 가전"
+            android:text="등록된 가전"
             android:textSize="24sp" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="#F3F3F3"
-        android:orientation="horizontal">
+        android:layout_width="wrap_content"
+        android:layout_height="369dp"
+        android:orientation="vertical">
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -111,7 +101,6 @@
                         android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
                         tools:srcCompat="@tools:sample/avatars" />
 
                     <TextView

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Register_Search_1">
-    <?xml version="1.0" encoding="utf-8"?>
+
     <!--<?xml version="1.0" encoding="utf-8"?> 오류 예상 -->
 
     <LinearLayout

@@ -12,6 +12,8 @@
         <entry key="..\:/Capstone/capstone1/app/src/main/res/layout/activity_register_search2.xml" value="0.33" />
         <entry key="..\:/Capstone/capstone1/app/src/main/res/layout/activity_register_search_1.xml" value="0.22447916666666667" />
         <entry key="..\:/Capstone/capstone1/app/src/main/res/layout/activity_repair_register.xml" value="0.22447916666666667" />
+        <entry key="..\:/Capstone/capstone1/app/src/main/res/layout/activity_test.xml" value="0.25" />
+        <entry key="..\:/Capstone/capstone1/app/src/main/res/layout/activity_test2.xml" value="0.36614583333333334" />
         <entry key="..\:/GItClone/capstone1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.245" />
         <entry key="..\:/GItClone/capstone1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.245" />
         <entry key="..\:/GItClone/capstone1/app/src/main/res/layout/activity_1.xml" value="0.2390625" />
@@ -31,6 +33,19 @@
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_search_1.xml" value="0.1" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_self.xml" value="0.2418478260869565" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_repair_register.xml" value="0.25" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_dynamic_mainxml.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_dynamic_mypage_view.xml" value="0.5" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_logo.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_mainxml.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_mypage.xml" value="0.33" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_register_popup.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_register_product.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_register_search2.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_register_search_1.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_register_self.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_repair_register.xml" value="0.17806484295845998" />
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_test.xml" value="0.17806484295845998" />
         <entry key="..\:/capstone/capstone1/app/src/main/res/layout/activity_1.xml" value="0.10185185185185185" />
         <entry key="..\:/capstone/capstone1/app/src/main/res/layout/activity_2.xml" value="0.24583333333333332" />
         <entry key="..\:/capstone/capstone1/app/src/main/res/layout/activity_main.xml" value="0.24583333333333332" />

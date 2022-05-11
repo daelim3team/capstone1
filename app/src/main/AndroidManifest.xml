@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProject">
         <activity
+            android:name=".dynamic_mypage_view"
+            android:exported="false" />
+        <activity
+            android:name=".dynamic_Home_view"
+            android:exported="false" />
+        <activity
             android:name=".Register_Product"
             android:exported="false" />
         <activity
@@ -17,7 +23,9 @@
             android:exported="false" />
         <activity android:name=".Register_Search_2" />
         <activity android:name=".Register_Search_1" />
-        <activity android:name=".Home">
+        <activity
+            android:name=".Home"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
