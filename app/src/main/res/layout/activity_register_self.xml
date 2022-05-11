@@ -7,16 +7,28 @@
     android:orientation="vertical"
     tools:context=".register_self">
 
-    <TextView
-        android:id="@+id/textView17"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:background="#FBCDDC"
-        android:gravity="left|fill_vertical"
-        android:letterSpacing="0.2"
-        android:paddingLeft="20dp"
-        android:text="등록하기"
-        android:textSize="18sp" />
+        android:layout_height="77dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="left|fill_vertical"
+            android:letterSpacing="0.2"
+            android:paddingLeft="20dp"
+            android:text="등록하기"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,10 +47,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/button_round"
             android:text="사진 찍기" />
     </LinearLayout>
 
@@ -88,10 +101,10 @@
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="52dp"
+            android:layout_width="51dp"
             android:layout_height="match_parent"
             android:layout_weight="0"
-            app:srcCompat="@android:drawable/ic_menu_today" />
+            app:srcCompat="@drawable/calendar" />
 
     </LinearLayout>
 
@@ -123,11 +136,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="300dp"
+            android:background="@drawable/button_round"
             android:text="등록하기" />
     </LinearLayout>
 

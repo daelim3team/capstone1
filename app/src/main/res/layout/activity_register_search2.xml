@@ -15,15 +15,20 @@
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:background="#FBCDDC"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
             android:gravity="left|fill_vertical"
             android:letterSpacing="0.2"
             android:paddingLeft="20dp"
             android:text="등록하기"
-            android:textSize="18sp" />
-
+            android:textSize="22sp" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_view"
@@ -39,6 +44,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
 
         <LinearLayout
             android:id="@+id/Move_test_layout"
@@ -57,24 +68,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="126dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="9dp"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-            </LinearLayout>
+                android:orientation="vertical" />
 
         </LinearLayout>
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,20 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="126dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="64dp"
-                    android:text="TextView" />
-            </LinearLayout>
+                android:orientation="vertical"/>
 
         </LinearLayout>
     </LinearLayout>
