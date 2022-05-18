@@ -49,9 +49,24 @@ public class Home extends AppCompatActivity {
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
                 Intent intent = new Intent(Home.this,Register_Search_1.class);
                 startActivity(intent);
 
+=======
+                //Intent intent = new Intent(Home.this,Register_Search_1.class);
+                //하위 코드 실행을 위한 입시 주석
+                //startActivity(intent);
+
+                //임시 동적 뷰
+                for (int i = 0; i <= 3; i++) { //테스트용 반복문 (없어도 됨)
+                    dynamic_Home_view n_dynamicHomeview = new dynamic_Home_view(getApplicationContext());    //Test에 있는 자바와 XML 객체로 가져오기
+                    LinearLayout con = (LinearLayout) findViewById(R.id.scrollview_Linear1); //추가할 레이아웃 위치
+                    con.addView(n_dynamicHomeview);    //add View로 추가 명령
+                }
+
+                //임시 동적 뷰 코드 끝
+>>>>>>> master
             }
         });
 

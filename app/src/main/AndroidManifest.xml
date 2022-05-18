@@ -20,7 +20,18 @@
             android:exported="false" />
         <activity
             android:name=".Register_Product"
+<<<<<<< HEAD
             android:exported="true"></activity>
+=======
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+>>>>>>> master
         <activity
             android:name=".Mypage"
             android:exported="false" />
@@ -28,12 +39,7 @@
         <activity android:name=".Register_Search_1" />
         <activity
             android:name=".Home"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity android:name=".Logo" />
     </application>

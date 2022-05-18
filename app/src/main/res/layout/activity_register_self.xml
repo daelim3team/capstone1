@@ -8,6 +8,7 @@
     tools:context=".register_self">
 
     <LinearLayout
+<<<<<<< HEAD
         android:layout_width="match_parent"
         android:layout_height="77dp"
         android:orientation="vertical">
@@ -27,24 +28,48 @@
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
+=======
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="fill_vertical"
+            android:letterSpacing="0.2"
+            android:paddingLeft="20dp"
+            android:text="등록하기"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+>>>>>>> master
         android:layout_height="2dp"
         android:background="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="301dp"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="20dp"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <android.widget.Button
@@ -57,14 +82,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
         android:layout_height="56dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView19"
-            android:layout_width="86dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
             android:text="모델명 :"
             android:textSize="20sp" />
 
@@ -72,7 +100,7 @@
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="322dp"
             android:layout_height="match_parent"
-            android:layout_weight="0"
+            android:layout_weight="2"
             android:ems="10"
             android:hint="입력해주세요"
             android:inputType="textPersonName" />
@@ -82,13 +110,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="53dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView31"
-            android:layout_width="99dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
             android:text="구매일자 :"
             android:textSize="20sp" />
 
@@ -96,14 +126,18 @@
             android:id="@+id/textView42"
             android:layout_width="211dp"
             android:layout_height="42dp"
-            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
             android:text="TextView" />
 
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="51dp"
             android:layout_height="match_parent"
+<<<<<<< HEAD
             android:layout_weight="0"
+=======
+            android:paddingTop="10dp"
+>>>>>>> master
             app:srcCompat="@drawable/calendar" />
 
     </LinearLayout>
@@ -111,13 +145,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView35"
-            android:layout_width="wrap_content"
-            android:layout_height="46dp"
-            android:layout_weight="0"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
             android:text="A/S 보증 기간 :"
             android:textSize="20sp" />
 
@@ -133,14 +168,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="49dp"
+        android:paddingRight="20dp"
         android:orientation="vertical">
 
         <android.widget.Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_marginLeft="300dp"
+=======
+            android:layout_gravity="right"
+>>>>>>> master
             android:background="@drawable/button_round"
             android:text="등록하기" />
     </LinearLayout>

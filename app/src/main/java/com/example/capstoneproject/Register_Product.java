@@ -19,6 +19,7 @@ public class Register_Product extends AppCompatActivity {
 
     Button bt_submit;
     ImageButton imgbt_calender;
+<<<<<<< HEAD
     EditText product_name,AS_date;
     TextView tv_date;
     DatePickerDialog datePickerDialog;
@@ -37,12 +38,23 @@ public class Register_Product extends AppCompatActivity {
 
     }
 
+=======
+    TextView tv_date;
+    DatePickerDialog datePickerDialog;
+    String date;
+>>>>>>> master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_product);
 
+<<<<<<< HEAD
         Declaration();
+=======
+        imgbt_calender = findViewById(R.id.bt_calender);
+        tv_date=findViewById(R.id.tv_date);
+        bt_submit = findViewById(R.id.button);
+>>>>>>> master
 
         imgbt_calender.setOnClickListener(new View.OnClickListener() {
             @Override

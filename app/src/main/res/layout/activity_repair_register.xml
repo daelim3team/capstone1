@@ -45,7 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="94dp"
                 android:layout_weight="1"
-                android:text="수리일"
+                android:paddingTop="20dp"
+                android:text="  수리일"
                 android:textSize="20sp" />
 
             <TextView
@@ -53,13 +54,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
                 android:text="선택해주세요"
                 android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="56dp"
+                android:layout_width="114dp"
+                android:layout_height="41dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/calendar" />
@@ -75,10 +78,10 @@
 
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="wrap_content"
+            android:layout_width="9dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="수리항목"
+            android:text="  수리항목"
             android:textSize="20sp" />
 
         <ImageButton
@@ -86,7 +89,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/btn_dropdown" />
+            android:backgroundTint="#FFFFFF"
+            app:srcCompat="@drawable/choice" />
 
     </LinearLayout>
 
@@ -103,10 +107,10 @@
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="wrap_content"
+                android:layout_width="52dp"
                 android:layout_height="37dp"
                 android:layout_weight="1"
-                android:text="수리처"
+                android:text="  수리처"
                 android:textSize="20sp" />
 
             <EditText
@@ -137,7 +141,7 @@
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="수리금액"
+                android:text="  수리금액"
                 android:textSize="20sp" />
 
             <EditText

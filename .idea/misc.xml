@@ -23,20 +23,30 @@
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/drawable/button_round.xml" value="0.259" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_1.xml" value="0.1453804347826087" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_2.xml" value="0.1453804347826087" />
-        <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_home.xml" value="0.2418478260869565" />
+        <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_dynamic_mainxml.xml" value="0.20516304347826086" />
+        <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_dynamic_mypage_view.xml" value="0.20516304347826086" />
+        <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_logo.xml" value="0.2418478260869565" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_main.xml" value="0.16168478260869565" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_mypage.xml" value="0.25271739130434784" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_popup.xml" value="0.25271739130434784" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_product.xml" value="0.2" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_search2.xml" value="0.264" />
+<<<<<<< HEAD
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_search_1.xml" value="0.1" />
+=======
+        <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_search_1.xml" value="0.176" />
+>>>>>>> master
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_register_self.xml" value="0.2418478260869565" />
         <entry key="..\:/KangSeungHee/capstone1/app/src/main/res/layout/activity_repair_register.xml" value="0.25" />
         <entry key="..\:/Users/yang2/AndroidStudioProjects/capstone9/app/src/main/res/layout/activity_dynamic_mainxml.xml" value="0.35280797101449274" />
         <entry key="..\:/Users/yang2/AndroidStudioProjects/capstone9/app/src/main/res/layout/activity_home.xml" value="0.35280797101449274" />
         <entry key="..\:/Users/yang2/AndroidStudioProjects/capstone9/app/src/main/res/layout/activity_register_product.xml" value="0.21" />
+<<<<<<< HEAD
         <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_dynamic_mainxml.xml" value="0.25" />
+=======
+        <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_dynamic_mainxml.xml" value="0.17806484295845998" />
+>>>>>>> master
         <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_dynamic_mypage_view.xml" value="0.5" />
         <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/capstone project/capstone1/app/src/main/res/layout/activity_logo.xml" value="0.17806484295845998" />
