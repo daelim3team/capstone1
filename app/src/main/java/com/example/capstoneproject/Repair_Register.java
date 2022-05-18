@@ -26,8 +26,6 @@ public class Repair_Register extends AppCompatActivity {
 
         tv_date = findViewById(R.id.tv_date_register_product);
 
-        setContentView(R.layout.activity_repair_register);
-
         et_fix_locate = findViewById(R.id.editTextTextPersonName);
         et_fix_bill = findViewById(R.id.editTextTextPersonName4);
         et_memo = findViewById(R.id.editTextTextPersonName6);
@@ -39,6 +37,8 @@ public class Repair_Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_repair_register);
+
 
         Declaration();
 

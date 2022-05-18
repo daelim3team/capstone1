@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_1_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF7A7A"
+    android:orientation="vertical"
+    tools:context=".Mypage_test">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="77dp"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView10"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="#FFFFFF"-->
+    <!--            android:gravity="left|fill_vertical"-->
+    <!--            android:letterSpacing="0.2"-->
+    <!--            android:paddingLeft="20dp"-->
+    <!--            android:text="마이페이지"-->
+    <!--            android:textSize="22sp" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/view2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background="@color/black" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="153dp"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Space-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView36"-->
+    <!--                android:layout_width="63dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:text="A/S 횟수는"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView37"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:paddingLeft="20dp"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:text="n"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView38"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:text="건 이며."-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--            <Space-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Space-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView39"-->
+    <!--                android:layout_width="63dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:text="총 비용은"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView40"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:paddingLeft="20dp"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:text="n"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView41"-->
+    <!--                android:layout_width="66dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:text="원 입니다."-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--            <Space-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <android.widget.Button-->
+    <!--            android:id="@+id/button2"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="수리 내역 등록하기"-->
+    <!--            android:background="@drawable/button_round"-->
+    <!--            android:textSize="16sp" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="6dp"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <View-->
+    <!--            android:id="@+id/view7"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="1dp"-->
+    <!--            android:background="#000000" />-->
+
+    <!--    </LinearLayout>-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/scrollview_Linear1"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical" />-->
+    <!--    </ScrollView>-->
+
+</LinearLayout>

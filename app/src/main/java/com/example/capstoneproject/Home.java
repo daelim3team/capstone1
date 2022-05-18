@@ -58,7 +58,7 @@ public class Home extends AppCompatActivity {
         imgv_mypage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this,Mypage.class); //에러발생
+                Intent intent = new Intent(Home.this,Mypage_test2.class); //에러발생
                 Toast.makeText(Home.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
