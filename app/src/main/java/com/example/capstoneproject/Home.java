@@ -34,7 +34,7 @@ public class Home extends AppCompatActivity {
                 //임시 동적 뷰
                 for (int i = 0; i <= 3; i++) { //테스트용 반복문 (없어도 됨)
                     dynamic_Home_view n_dynamicHomeview = new dynamic_Home_view(getApplicationContext());    //Test에 있는 자바와 XML 객체로 가져오기
-                    LinearLayout con = (LinearLayout) findViewById(R.id.scrollview_Linear); //추가할 레이아웃 위치
+                    LinearLayout con = (LinearLayout) findViewById(R.id.scrollview_Linear1); //추가할 레이아웃 위치
                     con.addView(n_dynamicHomeview);    //add View로 추가 명령
                 }
 
