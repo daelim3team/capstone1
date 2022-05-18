@@ -9,58 +9,60 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="77dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textView10"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:background="#FBCDDC"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
             android:gravity="left|fill_vertical"
             android:letterSpacing="0.2"
             android:paddingLeft="20dp"
             android:text="등록하기"
-            android:textSize="18sp" />
+            android:textSize="22sp" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="403dp"
+        android:layout_height="48dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_detail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:text="제품 상세"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="32dp"
             tools:layout_editor_absoluteY="31dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="333dp"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="362dp"
+            android:layout_height="299dp"
             tools:srcCompat="@tools:sample/avatars" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="149dp"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="제품명 : " />
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="10px"
-            android:background="#000000" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,38 +70,93 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tv_date"
-                android:layout_width="247dp"
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="  제품명 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="출시일 : " />
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="  출시일 : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_date_register_product"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
 
             <ImageButton
                 android:id="@+id/bt_calender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_menu_today" />
+                android:background="#FFFFFF"
+                android:paddingTop="13dp"
+                app:srcCompat="@drawable/calendar" />
+
         </LinearLayout>
 
         <View
             android:id="@+id/view3"
             android:layout_width="match_parent"
-            android:layout_height="10px"
+            android:layout_height="1dp"
             android:background="#000000" />
 
-        <TextView
-            android:id="@+id/tv_pr"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="A/S 보장 기간 : " />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pr"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:paddingTop="10dp"
+                android:text="  A/S 보장 기간 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/AS_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <Button
+    <android.widget.Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/button_round"
         android:text="등록하기"
         tools:layout_editor_absoluteX="301dp"
         tools:layout_editor_absoluteY="667dp" />

@@ -15,15 +15,20 @@
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
-            android:layout_height="86dp"
-            android:background="#FBCDDC"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
             android:gravity="left|fill_vertical"
             android:letterSpacing="0.2"
             android:paddingLeft="20dp"
             android:text="수리내역 등록"
-            android:textSize="18sp" />
-
+            android:textSize="22sp" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,7 +62,7 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_today" />
+                app:srcCompat="@drawable/calendar" />
 
         </LinearLayout>
 
@@ -171,13 +176,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="63dp"
             android:layout_marginLeft="300dp"
             android:layout_marginTop="20dp"
             android:text="등록하기"
+            android:background="@drawable/button_round"
             android:textSize="16sp" />
     </LinearLayout>
 
