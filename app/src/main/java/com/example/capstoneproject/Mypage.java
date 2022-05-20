@@ -74,7 +74,6 @@ public class Mypage extends AppCompatActivity {
 //                        startActivity(intent);
 //                    }
 //                }
-//        );
 
     }
 

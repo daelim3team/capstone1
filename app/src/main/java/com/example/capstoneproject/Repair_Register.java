@@ -3,14 +3,10 @@ package com.example.capstoneproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Repair_Register extends AppCompatActivity {
@@ -22,7 +18,7 @@ public class Repair_Register extends AppCompatActivity {
 
     public void Declaration()
     {
-        bt_registration = findViewById(R.id.button4);
+        bt_registration = findViewById(R.id.bt_RegisterToHome);
 
         tv_date = findViewById(R.id.tv_date_register_product);
 
@@ -37,7 +33,7 @@ public class Repair_Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_repair_register);
+        setContentView(R.layout.activity_repair_register_test);
 
 
         Declaration();

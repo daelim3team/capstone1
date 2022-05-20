@@ -18,7 +18,7 @@ public class Repair_Register_test extends AppCompatActivity {
 
     public void Declaration()
     {
-        bt_registration = findViewById(R.id.button4);
+
 
         tv_date = findViewById(R.id.textView6);
 
@@ -38,27 +38,28 @@ public class Repair_Register_test extends AppCompatActivity {
 
         Declaration();
 //============================================================== 에러 발생
-
+        bt_registration = findViewById(R.id.bt_RegisterToHome);
 //============================================================== 에러 발생
 
-        for(int i = 0; i<=10;i++){}
+//        for(int i = 0; i<=10;i++){}
 
+
+//                //버튼이 클릭되면 저장된 값을 내보냄
         bt_registration.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 String str_fix_locate = et_fix_locate.getText().toString();
                 String str_fix_bill = et_fix_bill.getText().toString();
                 String str_memo = et_memo.getText().toString();
                 String strdate = tv_date.getText().toString();
 
-//                //버튼이 클릭되면 저장된 값을 내보냄
-//                Product_save_list save_list = new Product_save_list();
-//
-//                save_list.importvalue_repair(str_memo,strdate,str_fix_bill,str_fix_locate);
-//                save_list.repair_file_export();
-//
-//                Intent intent = new Intent(Repair_Register_test.this,Mypage.class);
-//                startActivity(intent);
+                Product_save_list save_list = new Product_save_list();
+
+                save_list.importvalue_repair(str_memo,strdate,str_fix_bill,str_fix_locate);
+                save_list.repair_file_export();
+
+                Intent intent = new Intent(Repair_Register_test.this,Mypage_test2.class);
+                startActivity(intent);
             }
         });
     }

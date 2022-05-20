@@ -8,11 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.time.format.TextStyle;
 
 public class Home extends AppCompatActivity {
     Button registration;
     ImageView imgv_mypage;
+    TextView TempTextView;
 
     public void Declaration()
     {
@@ -21,11 +25,15 @@ public class Home extends AppCompatActivity {
         registration = findViewById(R.id.button3);
         imgv_mypage = findViewById(R.id.imageView5);
 
+        TempTextView = findViewById(R.id.textView8);
+
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
 
         Declaration();
 
@@ -61,8 +69,14 @@ public class Home extends AppCompatActivity {
                 Intent intent = new Intent(Home.this,Mypage_test2.class); //에러발생
                 Toast.makeText(Home.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                Product_save_list psl = new Product_save_list();
+
+                TempTextView.setText(psl.export_memo[0]);
             }
         });
+
+
+
 
 
     }
