@@ -65,7 +65,7 @@
                     android:id="@+id/view6"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/black" />
+                    android:background="@android:color/darker_gray" />
 
                 <LinearLayout
                     android:id="@+id/Move_test_layout"
