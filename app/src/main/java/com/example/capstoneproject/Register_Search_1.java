@@ -30,7 +30,7 @@ public class Register_Search_1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(Register_Search_1.this, Register_self2.class);
+                Intent intent = new Intent(Register_Search_1.this, Register_self.class);
 
                 startActivity(intent);//넘어간 이후 에러 발생
             }
