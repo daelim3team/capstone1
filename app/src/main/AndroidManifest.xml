@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProject">
         <activity
+            android:name=".Register_self2"
+            android:exported="false" />
+        <activity
             android:name=".dynamic_mypage_view"
             android:exported="false" />
         <activity
@@ -17,6 +20,9 @@
             android:exported="false" />
         <activity
             android:name=".Register_Product"
+<<<<<<< HEAD
+            android:exported="true"></activity>
+=======
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +31,7 @@
             </intent-filter>
 
         </activity>
+>>>>>>> master
         <activity
             android:name=".Mypage"
             android:exported="false" />

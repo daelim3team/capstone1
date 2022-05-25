@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="개월째 사용중"
+                    android:text=" 구매일"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -58,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="남은 A/S 기간 : "
+                    android:text=" A/S 기간 : "
                     android:textSize="20dp" />
 
                 <TextView
