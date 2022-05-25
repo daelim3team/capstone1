@@ -225,5 +225,11 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/TempButton_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="파일 내보내기 테스트 버튼" />
+
 
 </LinearLayout>

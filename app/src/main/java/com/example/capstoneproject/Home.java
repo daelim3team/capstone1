@@ -2,6 +2,7 @@ package com.example.capstoneproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,16 +12,20 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
 import java.time.format.TextStyle;
 
 public class Home extends AppCompatActivity {
-    Button registration;
+    Button registration,Tempbutton_file;
     ImageView imgv_mypage;
     TextView TempTextView;
 
     public void Declaration()
     {
         setContentView(R.layout.activity_home);
+
+        Tempbutton_file = findViewById(R.id.TempButton_file);
 
         registration = findViewById(R.id.button3);
         imgv_mypage = findViewById(R.id.imageView5);
@@ -75,7 +80,31 @@ public class Home extends AppCompatActivity {
             }
         });
 
+//=====================================================파일 저장 테스트 코드
 
+        Tempbutton_file = findViewById(R.id.TempButton_file);
+
+
+        Tempbutton_file.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Context context = null;
+                    FileOutputStream fos = context.openFileOutput("myFile.dat",MODE_APPEND);
+//                    DataOutputStream dos = new DataOutputStream(fos);
+                    //데이터를 쓴다.
+//                    dos.writeInt(100);
+//                    dos.writeUTF("문자열");
+//                    dos.flush();
+//                    dos.close();
+                    Toast.makeText(Home.this, "파일 테스트 버튼 클릭됨", Toast.LENGTH_SHORT).show();
+
+                }catch (Exception e){}
+
+            }
+        });
+
+        //=====================================================파일 저장 테스트 코드 끝
 
 
 
