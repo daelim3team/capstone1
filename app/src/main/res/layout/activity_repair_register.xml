@@ -32,7 +32,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="91dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -42,8 +42,8 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="94dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:paddingTop="20dp"
                 android:text="  수리일"
@@ -81,6 +81,7 @@
             android:layout_width="9dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:paddingTop="20dp"
             android:text="  수리항목"
             android:textSize="20sp" />
 
@@ -88,6 +89,7 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="20dp"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
             app:srcCompat="@drawable/choice" />
@@ -107,9 +109,10 @@
 
             <TextView
                 android:id="@+id/textView15"
-                android:layout_width="52dp"
-                android:layout_height="37dp"
+                android:layout_width="14dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingTop="20dp"
                 android:text="  수리처"
                 android:textSize="20sp" />
 
@@ -118,6 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="20dp"
                 android:ems="10"
                 android:hint="입력해주세요"
                 android:inputType="textPersonName" />
@@ -138,9 +142,10 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="53dp"
+                android:layout_width="11dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:paddingTop="20dp"
                 android:text="  수리금액"
                 android:textSize="20sp" />
 
@@ -183,7 +188,7 @@
         <android.widget.Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
-            android:layout_height="63dp"
+            android:layout_height="65dp"
             android:layout_marginLeft="300dp"
             android:layout_marginTop="20dp"
             android:text="등록하기"

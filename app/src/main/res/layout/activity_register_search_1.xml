@@ -32,32 +32,56 @@
         android:layout_height="2dp"
         android:background="@color/black" />
 
+
+
     <androidx.appcompat.widget.SearchView
+
         android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
         android:layout_margin="50dp"
+
         app:iconifiedByDefault="false"
-        app:queryHint="제품명을 검색하여 등록하세요." >
+        app:queryHint="제품명을 검색하여 등록하세요.">
+
 
     </androidx.appcompat.widget.SearchView>
+
+
     <android.widget.Button
         android:id="@+id/bt1_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_round"
         android:text="검색" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_gravity="left"
             android:layout_weight="1"
+            android:padding="10dp"
             android:text="찾으시는 제품이 없다면?"
             android:textSize="20dp" />
 
@@ -65,10 +89,15 @@
             android:id="@+id/bt1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:padding="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_round"
             android:text="등록하기" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>
