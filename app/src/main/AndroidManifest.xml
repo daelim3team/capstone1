@@ -17,7 +17,7 @@
         <!-- android:name=".Mypage_test" -->
         <!-- android:exported="false" /> -->
         <activity
-            android:name=".Register_self2"
+            android:name=".Register_self"
             android:exported="false" />
         <activity
             android:name=".dynamic_mypage_view"
@@ -42,7 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Logo" />
+<!--        <activity android:name=".Logo" />-->
     </application>
 
 </manifest>
