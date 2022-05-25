@@ -30,74 +30,82 @@
         android:layout_height="2dp"
         android:background="@color/black" />
 
+
     <androidx.appcompat.widget.SearchView
+
         android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
         android:layout_margin="50dp"
+
         app:iconifiedByDefault="false"
         app:queryHint="제품명을 검색하여 등록하세요.">
 
+
+
     </androidx.appcompat.widget.SearchView>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <View
-            android:id="@+id/view6"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black" />
-
-        <LinearLayout
-            android:id="@+id/Move_test_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="257dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/sym_def_app_icon" />
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="126dp"
-                android:layout_weight="1"
-                android:orientation="vertical" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-        </LinearLayout>
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
 
-        <View
-            android:id="@+id/view8"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black" />
+                <LinearLayout
+                    android:id="@+id/Move_test_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/sym_def_app_icon" />
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="258dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/sym_def_app_icon" />
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="126dp"
-                android:layout_weight="1"
-                android:orientation="vertical"/>
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
     </LinearLayout>
 
 </LinearLayout>
