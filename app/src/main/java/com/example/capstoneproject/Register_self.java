@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Register_self2 extends AppCompatActivity {
+public class Register_self extends AppCompatActivity {
 
         Button bt_registration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_self2);
+        setContentView(R.layout.activity_register_self);
 
 
         bt_registration = findViewById(R.id.button6);
@@ -27,7 +27,7 @@ public class Register_self2 extends AppCompatActivity {
 
                 String[] A = save_list.export_product_name;
 
-                Intent intent = new Intent(Register_self2.this,Home.class);
+                Intent intent = new Intent(Register_self.this,Home.class);
 
                 startActivity(intent);
             }

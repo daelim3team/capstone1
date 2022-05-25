@@ -54,13 +54,10 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-<<<<<<< HEAD
-=======
             android:layout_gravity="center"
             android:layout_weight="1"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
->>>>>>> master
             android:layout_height="299dp"
             tools:srcCompat="@tools:sample/avatars" />
 
@@ -69,47 +66,36 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="149dp"
-<<<<<<< HEAD
-=======
         android:layout_gravity="center"
->>>>>>> master
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-<<<<<<< HEAD
-            android:layout_height="wrap_content"
-=======
-            android:layout_height="43dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
->>>>>>> master
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
-<<<<<<< HEAD
-=======
                 android:layout_gravity="left"
->>>>>>> master
                 android:layout_height="45dp"
                 android:text="  제품명 : "
                 android:textSize="20dp" />
 
-<<<<<<< HEAD
             <EditText
                 android:id="@+id/product_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
-=======
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
->>>>>>> master
+
         </LinearLayout>
 
         <View
@@ -121,10 +107,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="51dp"
-<<<<<<< HEAD
-=======
             android:layout_gravity="center"
->>>>>>> master
             android:orientation="horizontal">
 
             <TextView
@@ -132,19 +115,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-<<<<<<< HEAD
-=======
                 android:layout_gravity="left"
->>>>>>> master
                 android:text="  출시일 : "
                 android:textSize="20dp" />
 
             <TextView
-<<<<<<< HEAD
                 android:id="@+id/tv_date_register_product"
-=======
-                android:id="@+id/textView"
->>>>>>> master
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:textSize="20dp" />
@@ -168,10 +144,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-<<<<<<< HEAD
-=======
             android:layout_gravity="center"
->>>>>>> master
             android:orientation="horizontal">
 
             <TextView
@@ -179,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="51dp"
                 android:paddingTop="10dp"
-<<<<<<< HEAD
+                android:layout_gravity="left"
                 android:text="  A/S 보장 기간 : "
                 android:textSize="20dp" />
 
@@ -190,10 +163,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName" />
-=======
-                android:layout_gravity="left"
-                android:text="  A/S 보장 기간 : "
-                android:textSize="20dp" />
+
 
             <TextView
                 android:id="@+id/textView7"
@@ -201,7 +171,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20dp" />
->>>>>>> master
 
         </LinearLayout>
 
