@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+<<<<<<< Updated upstream
     tools:context=".Register_self">
 
     <LinearLayout
@@ -26,6 +27,11 @@
 
     <View
         android:id="@+id/view2"
+=======
+    tools:context=".register_self">
+    <TextView
+        android:id="@+id/textView17"
+>>>>>>> Stashed changes
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/black" />

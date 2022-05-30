@@ -8,6 +8,8 @@
     tools:context=".Register_Search_1">
 
     <!--<?xml version="1.0" encoding="utf-8"?> 오류 예상 -->
+=======
+>>>>>>> Stashed changes
 
     <LinearLayout
         android:layout_width="match_parent"
