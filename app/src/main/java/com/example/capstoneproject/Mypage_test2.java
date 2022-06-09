@@ -12,9 +12,9 @@ public class Mypage_test2 extends AppCompatActivity {
 
 
     Button bt_repair_registration;
-    TextView tv_bill,tv_repairCount;
-    public void Declaration()
-    {
+    TextView tv_bill, tv_repairCount;
+
+    public void Declaration() {
         bt_repair_registration = findViewById(R.id.button2);
 
         tv_bill = findViewById(R.id.textView37);
@@ -24,23 +24,21 @@ public class Mypage_test2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mypage_test2);
 
         Product_save_list save_list = new Product_save_list();
 
         Declaration();
 
-//        String[] bill = save_list.export_repair_bill;
-//        int count = bill.length;
-//        int result = 0;
-//
-//        for(int i = 0; i < count ; i++)
-//        {
-//            result += Integer.parseInt(bill[i]);
-//        }
-//
-//        tv_bill.setText(count);
-//        tv_repairCount.setText(result);
+        String[] bill = save_list.export_repair_bill;
+        int count = bill.length;
+        int result = 0;
+
+        for (int i = 0; i < count; i++) {
+            result += Integer.parseInt(bill[i]);
+        }
+
+        tv_bill.setText(count);
+        tv_repairCount.setText(result);
 
 
 //        dynamic_mypage_view n_test = new dynamic_mypage_view(getApplicationContext());    //Test에 있는 자바와 XML 객체로 가져오기
@@ -51,11 +49,10 @@ public class Mypage_test2 extends AppCompatActivity {
         bt_repair_registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Mypage_test2.this,Repair_Register_test.class);
+                Intent intent = new Intent(Mypage_test2.this, Repair_Register.class);
                 startActivity(intent);
             }
         });
-
 
 
 //        bt_repair_registration.setOnClickListener(new View.OnClickListener() {
@@ -65,7 +62,6 @@ public class Mypage_test2 extends AppCompatActivity {
 //                        startActivity(intent);
 //                    }
 //                }
-//        );
 
     }
 }

@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.capstoneproject"
-        minSdkVersion 22
+        minSdkVersion 27
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"

@@ -1,10 +1,18 @@
 package com.example.capstoneproject;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Build;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,6 +28,9 @@ public class Home extends AppCompatActivity {
     Button registration,Tempbutton_file;
     ImageView imgv_mypage;
     TextView TempTextView;
+
+    private static String CHANNEL_ID = "channel1";
+    private static String CHANEL_NAME = "Channel1";
 
     public void Declaration()
     {
@@ -71,8 +82,7 @@ public class Home extends AppCompatActivity {
         imgv_mypage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Home.this,Mypage_test2.class); //에러발생
-                Toast.makeText(Home.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Home.this,Mypage_test2.class);
                 startActivity(intent);
                 Product_save_list psl = new Product_save_list();
 
@@ -106,7 +116,48 @@ public class Home extends AppCompatActivity {
 
         //=====================================================파일 저장 테스트 코드 끝
 
+        //=====================================================알람 코드 시작
 
+//        create = findViewById(R.id.create);
+//        remove = findViewById(R.id.remove);
+        int value = 0;
+
+
+
+        createNotification();
+        //removeNotification();
 
     }
+
+    private void createNotification() {
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "default");
+
+        builder.setSmallIcon(R.mipmap.ic_launcher);
+        builder.setContentTitle("제품 AS 기간 알림");
+        builder.setContentText("-String- 제품의 AS 기간이 -int-만큼 남았습니다.");
+
+        builder.setColor(Color.rgb(255,160,122));
+        // 사용자가 탭을 클릭하면 자동 제거
+        builder.setAutoCancel(true);
+
+        // 알림 표시
+        NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(new NotificationChannel("default", "기본 채널", NotificationManager.IMPORTANCE_DEFAULT));
+        }
+
+        // id값은
+        // 정의해야하는 각 알림의 고유한 int값
+        notificationManager.notify(1, builder.build());
+    }
+
+    private void removeNotification() {
+
+        // Notification 제거
+        NotificationManagerCompat.from(this).cancel(1);
+    }
+
+        //=====================================================알람 코드 끝
+
 }

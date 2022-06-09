@@ -21,11 +21,7 @@
             android:letterSpacing="0.2"
             android:paddingLeft="20dp"
             android:text="A/S 관리"
-<<<<<<< Updated upstream
             android:textSize="22sp" />
-=======
-            android:textSize="18sp"/>
->>>>>>> Stashed changes
 
         <ImageView
             android:id="@+id/imageView5"
