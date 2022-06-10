@@ -2,12 +2,17 @@ package com.example.capstoneproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Calendar;
 
 public class Repair_Register_test extends AppCompatActivity {
 
@@ -15,6 +20,9 @@ public class Repair_Register_test extends AppCompatActivity {
     Button bt_registration;
     EditText et_fix_locate,et_fix_bill,et_memo,et_fixPart;
     TextView tv_date;
+    ImageView iv_calender;
+    DatePickerDialog datePickerDialog;
+    String date;
 
     public void Declaration()
     {
@@ -26,6 +34,8 @@ public class Repair_Register_test extends AppCompatActivity {
         et_fix_bill = findViewById(R.id.editTextTextPersonName4);
         et_memo = findViewById(R.id.editTextTextPersonName6);
         et_fixPart = findViewById(R.id.editTextTextPersonName3);
+
+        iv_calender=findViewById(R.id.imageView4);
 
 
 
@@ -60,6 +70,27 @@ public class Repair_Register_test extends AppCompatActivity {
 
                 Intent intent = new Intent(Repair_Register_test.this,Mypage_test2.class);
                 startActivity(intent);
+            }
+        });
+        iv_calender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Calendar calendar = Calendar.getInstance();
+                int nYear = calendar.get(Calendar.YEAR);
+                int nMonth = calendar.get(Calendar.MONTH);
+                int nDay = calendar.get(Calendar.DAY_OF_MONTH);
+
+                datePickerDialog = new DatePickerDialog(Repair_Register_test.this,
+                        new DatePickerDialog.OnDateSetListener(){
+                            @Override
+                            public void onDateSet(DatePicker datePicker, int year, int month, int day){
+                                month+=1;
+                                date=year+"/"+month+"/"+day;
+                                tv_date.setText(date);
+                            }
+
+                        },nYear,nMonth,nDay);
+                datePickerDialog.show();
             }
         });
     }
