@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -60,10 +63,21 @@ public class Mypage extends AppCompatActivity {
         bt_repair_registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Mypage.this,Repair_Register.class);
+                Intent intent = new Intent(Mypage.this,Repair_Register_test.class);
                 startActivity(intent);
             }
         });
+
+        //1.(읽기) 에디트 텍스트에서 불러올 파일 받아오기
+        String name = "abcd";
+        String content = null;
+        try {
+            //불러올 파일 이름을 던져주며 메소드 실행
+            content = readFromFile(name);
+            //.setText(content);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
 
@@ -77,6 +91,24 @@ public class Mypage extends AppCompatActivity {
 
     }
 
+    //파일을 읽기위한 메소드
+    public String readFromFile(String name) throws Exception {
+        //2.(읽기) 받아온 이름경로 설정 하고
+        FileInputStream fileInputStream = openFileInput(name);
+        //3.(읽기) 버퍼에 연동해주기
+        BufferedReader reader = new BufferedReader(new InputStreamReader(fileInputStream));
+        //4.(읽기) 스트링 버퍼 생성
+        StringBuffer stringBuffer = new StringBuffer();
 
+        String content = null; // 4.(읽기) 리더에서 라인을 받아오는데 받아올게 없을때까지 반ㅁㄴ복
+        while ((content = reader.readLine()) != null) {
+            stringBuffer.append(content + "\n");
+        }
+        //사용한것들은 종료
+        reader.close();
+        fileInputStream.close();
+        //5.(읽기)받아온 정보를 다시 리턴해준다
+        return stringBuffer.toString();
+    }
 
 }
