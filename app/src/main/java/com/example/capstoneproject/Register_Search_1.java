@@ -114,7 +114,7 @@ class test extends AsyncTask<String, Void, String> // 비동기화 클래스
     }
 }
 
- class Api { // naver open api
+class Api { // naver open api
     static String get(String apiUrl, Map<String, String> requestHeaders) {
         HttpURLConnection con = connect(apiUrl);
         try {
