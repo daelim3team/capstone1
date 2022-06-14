@@ -42,12 +42,23 @@ public class Register_Search_2 extends AppCompatActivity {
         }
         Picasso.get().load(getLink[0]).into(iv1);
         Picasso.get().load(getLink[1]).into(iv2);
-        Move_test_layout.setOnClickListener(new View.OnClickListener() {
+
+        iv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Register_Search_2.this,Register_Product.class);
+                intent.putExtra("data",getLink[0]);
                 startActivity(intent);
             }
         });
+        iv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Register_Search_2.this,Register_Product.class);
+                intent.putExtra("data",getLink[1]);
+                startActivity(intent);
+            }
+        });
+
     }
 }

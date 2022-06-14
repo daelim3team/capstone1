@@ -13,6 +13,8 @@ import org.w3c.dom.Text;
 public class dynamic_Home_view extends LinearLayout {
     TextView Product_name,using,as_term;
 
+
+
     public dynamic_Home_view(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -52,6 +54,7 @@ public class dynamic_Home_view extends LinearLayout {
         Product_name.setText("성공");
 
     }
+
     private void init(Context context){
         LayoutInflater inflater =(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.activity_dynamic_mainxml,this,true);

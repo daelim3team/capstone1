@@ -79,7 +79,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home.this,Mypage_test2.class); //에러발생
-                Toast.makeText(Home.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Home.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 Product_save_list psl = new Product_save_list();
 
@@ -176,4 +176,8 @@ public class Home extends AppCompatActivity {
         //5.(읽기)받아온 정보를 다시 리턴해준다
         return strarr;
     }
+//    public void create(){
+//        TextView textView = new TextView(getApplicationContext());
+//        textView.setText();
+//    }
 }

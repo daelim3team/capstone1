@@ -110,7 +110,7 @@ public class Mypage_test2 extends AppCompatActivity {
             if(count == 0)
             {
                 String stringTest = content.toString();
-                Toast.makeText(Mypage_test2.this, stringTest, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Mypage_test2.this, stringTest, Toast.LENGTH_SHORT).show();
                 count2 += Integer.parseInt(stringTest.trim());
             }
             if(count == 5)

@@ -10,8 +10,11 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -28,6 +31,7 @@ public class Register_Product extends AppCompatActivity {
     TextView tv_date;
     DatePickerDialog datePickerDialog;
     String date;
+    ImageView imageView;
 
     public void Declaration()
     {
@@ -40,6 +44,9 @@ public class Register_Product extends AppCompatActivity {
         tv_date=findViewById(R.id.tv_date);
         bt_submit = findViewById(R.id.button);
 
+        imageView = findViewById(R.id.imageView);
+
+
     }
 
     @Override
@@ -48,6 +55,9 @@ public class Register_Product extends AppCompatActivity {
         setContentView(R.layout.activity_register_product);
 
         Declaration();
+
+        String data = getIntent().getStringExtra("data");
+        Picasso.get().load(data).into(imageView);
 
         imgbt_calender.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +98,7 @@ public class Register_Product extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 Intent intent = new Intent(Register_Product.this,Home.class);
+                startActivity(intent);
             }
         });
     }

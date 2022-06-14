@@ -55,7 +55,7 @@ public class Repair_Register_test extends AppCompatActivity {
         Declaration();
 //============================================================== 에러 발생
         bt_registration = findViewById(R.id.bt_RegisterToHome);
-        TestIO = findViewById(R.id.button7);
+//        TestIO = findViewById(R.id.button7);
 //============================================================== 에러 발생
 
 //        for(int i = 0; i<=10;i++){}
@@ -93,7 +93,7 @@ public class Repair_Register_test extends AppCompatActivity {
 
                 //에디트 텍스트에 파일 이름 받아오기
                 String content1 = et_fix_bill.getText().toString();
-                Toast.makeText(Repair_Register_test.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Repair_Register_test.this, "이미지 뷰 클릭", Toast.LENGTH_SHORT).show();
 
                 //에디트 텍스트에서 내용 받아오기
                 String content2 = et_fixPart.getText().toString();
@@ -118,26 +118,26 @@ public class Repair_Register_test extends AppCompatActivity {
 //                save_list.importvalue_repair(str_memo,strdate,str_fix_bill,str_fix_locate);
 //                save_list.repair_file_export();
 
-//                Intent intent = new Intent(Repair_Register_test.this,Mypage_test2.class);
-//                startActivity(intent);
+                Intent intent = new Intent(Repair_Register_test.this,Mypage_test2.class);
+                startActivity(intent);
             }
         });
 
-        TestIO.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //1.(읽기) 에디트 텍스트에서 불러올 파일 받아오기
-                String name = "abcd";
-                String content = null;
-                try {
-                    //불러올 파일 이름을 던져주며 메소드 실행
-                    content = readFromFile(name);
-                    et_memo.setText(content);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+//        TestIO.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //1.(읽기) 에디트 텍스트에서 불러올 파일 받아오기
+//                String name = "abcd";
+//                String content = null;
+//                try {
+//                    //불러올 파일 이름을 던져주며 메소드 실행
+//                    content = readFromFile(name);
+//                    et_memo.setText(content);
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
     }
 
     //파일을 읽기위한 메소드

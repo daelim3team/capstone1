@@ -19,4 +19,5 @@ public class dynamic_mypage_view extends LinearLayout {
         LayoutInflater inflater =(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.activity_dynamic_mypage_view,this,true);
     }
+
 }
