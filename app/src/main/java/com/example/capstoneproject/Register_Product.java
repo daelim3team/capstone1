@@ -89,11 +89,11 @@ public class Register_Product extends AppCompatActivity {
                 String p_name = product_name.getText().toString();
                 String AS_dates = AS_date.getText().toString();
                 String create_date = tv_date.getText().toString();
-                String temp_url = "temp date";
+                String url = data;
 
                 try {
                     //1.(쓰기) 메소드 호출과 동시에 에디트 택스트에서 받은것들 넘겨주기
-                    writeToFile(p_name, AS_dates,create_date);
+                    writeToFile(p_name, AS_dates,create_date,url);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -124,7 +124,7 @@ public class Register_Product extends AppCompatActivity {
     }
 
 
-    public void writeToFile(String content1, String content2, String content3) throws Exception {
+    public void writeToFile(String content1, String content2, String content3,String content4) throws Exception {
         //2.(쓰기) 자바랑은 다르게 openFileOutput(name, MODE_PRIVATE) 이렇게 사용하는데
         // 받아온 파일이름넣어주고 쉐어드프리퍼런드때 배웠던것처럼 나만 사용하게 하는 모드이다.
         FileOutputStream outputStream = openFileOutput("Product_data", MODE_APPEND);
@@ -136,6 +136,8 @@ public class Register_Product extends AppCompatActivity {
         writer.write(content2);
         writer.write("\n");
         writer.write(content3);
+        writer.write("\n");
+        writer.write(content4);
         writer.write("\n");
         writer.write("====================");
         writer.write("\n");

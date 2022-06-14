@@ -1,19 +1,23 @@
 package com.example.capstoneproject;
 
 import android.content.Context;
+import android.net.Uri;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+
+
 public class dynamic_Home_view extends LinearLayout {
     TextView Product_name,using,as_term;
 
-
+   // ImageView imageView;
 
     public dynamic_Home_view(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -26,32 +30,26 @@ public class dynamic_Home_view extends LinearLayout {
 
         init(context);
     }
+    TextView p_name,p_data,p_repair,p_url;
+    ImageView imageView;
 
-
-    String[] A = new String[90];
-
-    public void change_value(int value)
+    public void change_value(int value,String[] C)
     {
+        System.out.println("다이나믹 실행됨");
 
-        Product_name = findViewById(R.id.textView18);
-        using = findViewById(R.id.textView22);
-        as_term = findViewById(R.id.textView26);
-        using.setText("Success");
+        p_name = findViewById(R.id.textView18);
+        p_data = findViewById(R.id.textView22);
+        p_repair = findViewById(R.id.textView26);
 
-        Home save_list = new Home();
-        try {
-            A = save_list.readFromFile1("Product_data");
-        }
-        catch (Exception e)
-        {
-            Product_name.setText("Error occur");
+        imageView = findViewById(R.id.image_view123);
 
-        }
+        p_name.setText("제품명 : "+C[value*4+0]);
+        p_data.setText(C[value*4+2]);
+        p_repair.setText(C[value*4+1]);
 
-        Product_name.setText(A[value]);
-        using.setText(A[value+1]);
-        as_term.setText(A[value+2]);
-        Product_name.setText("성공");
+        Uri uri =Uri.parse(C[value*4+3]); ;
+        imageView.setImageURI(uri);
+
 
     }
 
@@ -59,7 +57,5 @@ public class dynamic_Home_view extends LinearLayout {
         LayoutInflater inflater =(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.activity_dynamic_mainxml,this,true);
     }
-
-
 
 }

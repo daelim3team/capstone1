@@ -25,11 +25,13 @@ public class Home extends AppCompatActivity {
     TextView TempTextView;
     String[] strarr = new String[90];
 
+    public static Context context_main;
+
     public void Declaration()
     {
         setContentView(R.layout.activity_home);
 
-        Tempbutton_file = findViewById(R.id.TempButton_file);
+
 
         registration = findViewById(R.id.button3);
         imgv_mypage = findViewById(R.id.imageView5);
@@ -41,20 +43,19 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
+        context_main = this;
 
         Declaration();
 
         Product_save_list save_list = new Product_save_list();
 
         try {
-
+            readFromFile1("Product_data");
 
             for (int i = 0; i <= readFromFile("Product_data"); i++) { //배열의 크기만큼 생성
                 dynamic_Home_view n_dynamicHomeview = new dynamic_Home_view(getApplicationContext());    //Test에 있는 자바와 XML 객체로 가져오기
 
-                n_dynamicHomeview.change_value(i);
+                n_dynamicHomeview.change_value(i,strarr);
 
                 LinearLayout con = (LinearLayout) findViewById(R.id.HScrollView_Linear); //추가할 레이아웃 위치
                 con.addView(n_dynamicHomeview);    //add View로 추가 명령
@@ -63,6 +64,11 @@ public class Home extends AppCompatActivity {
         }
         catch (Exception e)
         {
+            Toast.makeText(Home.this, "에러 발생", Toast.LENGTH_SHORT).show();
+            System.out.println("다이나믹 뷰에서 에러 발생함");
+            System.out.println("==============");
+            System.out.println(e);
+            System.out.println("==============");
 
         }
         //activityh_register_search 로 이동하는 버튼부분
@@ -86,23 +92,6 @@ public class Home extends AppCompatActivity {
                 TempTextView.setText(psl.export_memo[0]);
             }
         });
-
-//=====================================================파일 저장 테스트 코드
-
-        Tempbutton_file = findViewById(R.id.TempButton_file);
-
-
-        Tempbutton_file.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-
-                }catch (Exception e){}
-
-            }
-        });
-
-        //=====================================================파일 저장 테스트 코드 끝
 
 
 
@@ -143,30 +132,43 @@ public class Home extends AppCompatActivity {
         return count2 ;//stringBuffer.toString();
     }
 
+    public String[] getStrarr() {
+        return strarr;
+    }
+
+    public void setStrarr(String[] strarr) {
+        this.strarr = strarr;
+    }
+
     //파일을 읽기위한 메소드
     public String[] readFromFile1(String name) throws Exception {
+
 //2.(읽기) 받아온 이름경로 설정 하고
         FileInputStream fileInputStream = openFileInput(name);
         //3.(읽기) 버퍼에 연동해주기
         BufferedReader reader = new BufferedReader(new InputStreamReader(fileInputStream));
         //4.(읽기) 스트링 버퍼 생성
+        System.out.println("파일 실행됨");
         StringBuffer stringBuffer = new StringBuffer();
         String content = null; // 4.(읽기) 리더에서 라인을 받아오는데 받아올게 없을때까지 반ㅁㄴ복
         String Temp = "";
         int count = 0;
         int count2 = 0;
+        String[] strarr2 = new String[90];
 
         while ((content = reader.readLine()) != null) {
-            if(content == "====================")
+            System.out.println("실행됨"+content);
+
+            if(count<=3)
+            {
+                strarr2[count2] = content;
+            }
+            else if(count == 4)
             {
                 count = -1;
-            }
-            else
-            {
-                strarr[count] = content;
 
             }
-
+            count2++;
             count ++;
         }
 
@@ -174,7 +176,9 @@ public class Home extends AppCompatActivity {
         reader.close();
         fileInputStream.close();
         //5.(읽기)받아온 정보를 다시 리턴해준다
-        return strarr;
+        setStrarr(strarr2);
+
+        return strarr2;
     }
 //    public void create(){
 //        TextView textView = new TextView(getApplicationContext());
